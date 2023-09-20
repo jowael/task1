@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Borel&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 3000px;
+  /* background-image: url(../img/killua.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 700px 20px; */
+  /* text-align: center; */
+  background-color: rgb(255, 255, 255);
+}
+.heading {
+  background-color: rgb(75, 75, 145);
+  width: 100%;
+  /* position: absolute; */
+  display: block;
+  top: 0;
+  left: 0;
+  /* height: 60px; */
+  overflow: auto;
+}
+.heading p {
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Borel", cursive;
+  color: blueviolet;
+  float: left;
+  margin-left: 90px;
+  /* display: inline; */
+  margin-top: 20px;
+}
+.ul1 li {
+  display: inline-block;
+  cursor: pointer;
+}
+.ul1 {
+  float: right;
+  margin-right: 50px;
+  margin-top: 30px;
+  font-size: 33px;
+  word-spacing: 40px;
+}
+.bt1 {
+  width: 70px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: blueviolet;
+  color: aliceblue;
+  margin-bottom: 20px;
+}
+.mid {
+  background-image: url(../img/stars.jpg);
+  width: 100%;
+  height: 450px;
+  color: white;
+  /* margin-top: 100px; */
+  background-position: center;
+  background-size: cover;
+  clear: both;
+}
+.p1 {
+  text-transform: uppercase;
+  font-size: 100px;
+  padding-top: 140px;
+  padding-left: 90px;
+}
+
+.p2 {
+  text-transform: capitalize;
+  font-size: 20px;
+  /* padding-top: 140px; */
+  padding-left: 150px;
+}
+.Boxes {
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+  height: 193px;
+}
+.Bx1 {
+  width: 300px;
+  height: 190px;
+  border-radius: 15px;
+  border: 2px solid red;
+  padding-top: 46px;
+  float: left;
+  margin: 0 50px;
+  margin-left: 24%;
+}
+.Bx1:hover,
+.Bx2:hover,
+.Bx3:hover {
+  background-color: rgb(237, 237, 237);
+}
+.Bx2 {
+  width: 300px;
+  height: 190px;
+  border-radius: 15px;
+  border: 2px solid red;
+  padding-top: 46px;
+  float: left;
+}
+.Bx3 {
+  width: 300px;
+  height: 190px;
+  border-radius: 15px;
+  border: 2px solid red;
+  padding-top: 46px;
+  float: left;
+  margin-left: 50px;
+}
+.Main1 {
+  font-size: larger;
+  font-weight: bolder;
+}
+.Body1 {
+  font-size: large;
+}
+.Email {
+  color: orange;
+}
+.mid2 {
+  height: 90px;
+  width: 90%;
+  margin: 20px 90px;
+}
+.mid2 h2 {
+  font-size: 70px;
+}
+
+.mid2 p {
+  font-size: 30px;
+  margin-left: 30px;
+}
+.forma {
+  /* border: 2px solid; */
+  border-top-left-radius: 40px 40px;
+  border-bottom-right-radius: 40px 40px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.form1 label {
+  font-size: 25px;
+  display: block;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form1 input:focus,
+.form1 input:hover,
+.area1:focus,
+.area1:hover {
+  outline: none;
+  border-color: orange;
+}
+.area1 {
+  width: 100%;
+  height: 120px;
+  resize: none;
+}
+.btn1 {
+  display: block;
+  width: 200px;
+  font-size: large;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid orange;
+  /* background: transparent; */
+  cursor: pointer;
+  color: #000000;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  margin: auto;
+}
+.input {
+  width: 84%;
+  padding: 10px;
+  margin: 10px 0;
+  display: inline-block;
+}
+.input input {
+  width: 100%;
+  height: 40px;
+}
+.name {
+  width: 42%;
+}
+
+.css {
+  background: orange;
+  width: 0;
+  height: 100%;
+  border-radius: 15px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+.btn1:hover .css {
+  width: 100%;
+}
+.a1,
+.mob,
+.Em,
+.area1 {
+  padding: 0.5rem 1rem;
+}
+.a7a{
+  border: 2px solid green;
+  width: 500px;
+}
+.a7a h2{
+  border: 3px dashed red;
+  width: 320px;
+  padding-left: 250px;
+  margin-left: 60px;
+}

@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding-top: 70px;
+  perspective: 500px;
+}
+section {
+  margin: auto;
+  position: relative;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+section,
+.front,
+.back {
+  width: 250px;
+  height: 250px;
+  background-color: royalblue;
+}
+
+.front,
+.back {
+  position: absolute;
+}
+.front {
+  z-index: 1;
+  background-color: red;
+  backface-visibility: hidden;
+}
+section:hover {
+  transform: rotateY(180deg);
+}
+.back {
+  transform: rotateY(180deg);
+}
+.parent {
+  width: 100%;
+  position: relative;
+  margin-bottom: 100px;
+}
+.div1 {
+  width: 200px;
+  height: 100px;
+  background-color: blue;
+  animation-name: change;
+  animation-duration: 2s;
+  position: absolute;
+  left: 0;
+  animation-iteration-count: 2;
+  /* animation-delay: 5s; */
+  /* animation-direction: alternate-reverse; */
+  /* animation-fill-mode: forwards; */
+}
+@keyframes change {
+  0% {
+    background-color: red;
+    left: 0;
+  }
+  50% {
+    background-color: black;
+    left: 500px;
+  }
+  100% {
+    background-color: green;
+    left: 900px;
+  }
+}
+.div1:hover {
+  animation-play-state: paused;
+}
+.parent2 {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 80%; */
+  /* margin: auto; */
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 600px;
+  /* align-items: center; */
+}
+.div11 {
+  /* margin-top: 100px; */
+  width: 250px;
+  height: 150px;
+  background-color: red;
+  /* flex-grow: 1; */
+  align-content: flex-end;
+  flex-wrap: initial;
+  /* order: 3; */
+  align-self: flex-end;
+}
+.div12 {
+  width: 250px;
+  height: 150px;
+  background-color: greenyellow;
+  /* flex-grow: 1; */
+}
+.div13 {
+  width: 250px;
+  height: 150px;
+  background-color: blueviolet;
+  /* flex-grow: 1; */
+}
